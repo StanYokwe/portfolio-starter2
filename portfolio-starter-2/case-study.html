@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UX Case Study — Stan Yokwe</title>
+  <meta name="description" content="UX case study for a mobile-first journaling app: research, problem, ideation, prototyping, testing, outcomes." />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* lightweight reading styles layered on your theme */
+    .prose{max-width:72ch;margin-inline:auto}
+    .prose h1{font-size:clamp(1.6rem,3vw,2rem);margin:.25rem 0 1rem}
+    .prose h2{font-size:1.25rem;margin:2rem 0 .5rem}
+    .prose h3{font-size:1.05rem;margin:1.25rem 0 .35rem}
+    .prose p,.prose li{color:var(--text)}
+    .kicker{color:var(--muted);margin-bottom:1.25rem}
+    .meta{color:var(--muted);font-size:.95rem}
+    .toc{background:var(--surface);box-shadow:var(--shadow);border-radius:var(--radius);padding:16px;margin:18px 0}
+    .toc a{display:block;padding:.25rem 0}
+    .badge{display:inline-block;background:#FFF2B3;border:1px solid #FFE48F;border-radius:999px;padding:.25rem .6rem;margin-right:.35rem}
+    table.cs{width:100%;border-collapse:separate;border-spacing:0;border:1px solid #EEE;border-radius:12px;overflow:hidden}
+    table.cs th,table.cs td{padding:.65rem .75rem;vertical-align:top}
+    table.cs thead th{background:#FAFAFF;text-align:left}
+    table.cs tbody tr+tr td{border-top:1px solid #F0F0F5}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    @media (max-width:900px){.grid-2{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <nav class="container nav" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="Stan Yokwe Home">
+        <img class="logo" src="assets/logo.jpg" alt="Stan Yokwe logo" />
+        <span class="brand-text">Stan Yokwe</span>
+      </a>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a class="active" aria-current="page" href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="section">
+      <div class="container prose">
+        <p class="kicker meta">UX Case Study</p>
+        <h1>Mobile Journal: Fast, Offline-First Memory Logging</h1>
+        <p class="meta">Role: UX/UI • Methods: Competitive analysis, Interviews, Survey, Contextual inquiry, Usability testing</p>
+
+        <!-- FIX: promote early prototype headings to h2 to keep sequential order -->
+        <article class="card">
+          <h2>Prototype — Journal Timeline</h2>
+          <p>This prototype shows how entries appear in a timeline with emojis, notes, and location tags for easy recall.</p>
+          <figure>
+            <img src="assets/prototype-home.jpg" alt="Journal app prototype showing timeline of entries" />
+            <figcaption class="muted small">Prototype: Journal timeline view</figcaption>
+          </figure>
+        </article>
+
+        <article class="card">
+          <h2>Prototype — Journal Filtered</h2>
+          <p>This prototype shows how certain entries look filtered.</p>
+          <figure>
+            <img src="assets/prototype-filter.jpg" alt="Journal app prototype showing filtered entries" />
+            <figcaption class="muted small">Prototype: Journal Filter view</figcaption>
+          </figure>
+        </article>
+
+        <article class="card">
+          <h2>Prototype — Journal Entry</h2>
+          <p>This prototype shows how past entries look.</p>
+          <figure>
+            <img src="assets/prototype-entry.jpg" alt="Journal app prototype showing past entries" />
+            <figcaption class="muted small">Prototype: Journal Entry view</figcaption>
+          </figure>
+        </article>
+      </div>
+
+      <div class="toc" aria-label="Table of contents">
+        <strong>Contents</strong>
+        <a href="#overview">1. Project Overview</a>
+        <a href="#why-now">2. Why Now?</a>
+        <a href="#outcomes">3. Outcome</a>
+        <a href="#methods">4. Methods</a>
+        <a href="#findings">5. Key Findings</a>
+        <a href="#competitors">6. Competitor Analysis (Artifact #1)</a>
+        <a href="#problem">7. Problem Statement</a>
+        <a href="#success">8. Success Criteria</a>
+        <a href="#ideation">9. Ideation</a>
+        <a href="#flows">10. User Flow Map (Artifact #2)</a>
+        <a href="#testing">11. Usability Testing</a>
+        <a href="#metrics">12. Metrics</a>
+        <a href="#goals">13. Goals & Target Audience</a>
+        <a href="#ui">14. Key UI Decisions & Rationale</a>
+        <a href="#type-color">15. Typography & Color</a>
+        <a href="#prototyping">16. Prototyping</a>
+        <a href="#solution">17. Final Solution & Design Brief</a>
+        <a href="#accessibility">18. Accessibility Considerations</a>
+        <a href="#lesson">19. Lesson Learned</a>
+        <a href="#reflection">20. Reflection</a>
+      </div>
+
+      <!-- rest of your content unchanged -->
+      <h2 id="overview">Project Overview</h2>
+      <p>A simple mobile journal to capture daily moments with emojis, photos/quotes, and location. Entries work offline, then sync when online.</p>
+
+      <!-- ... keep the remainder of the page content as in your original ... -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Portfolio</h4>
+        <p class="muted">Creating beautiful, functional digital experiences that solve real problems and make a positive impact.</p>
+      </div>
+      <nav aria-label="Quick links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="case-study.html" aria-current="page">Case Study</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li>Web Development</li>
+          <li>UI/UX Design</li>
+          <li>Mobile Development</li>
+          <li>Consulting</li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">© <span id="year"></span> Stan Yokwe. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

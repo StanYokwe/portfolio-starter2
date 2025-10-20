@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stan Yokwe — Portfolio</title>
+    <meta
+      name="description"
+      content="Creative Developer & Designer portfolio showcasing projects, skills, and contact information."
+    />
+    <meta name="author" content="Stan Yokwe" />
+    <meta name="theme-color" content="#7B6EF6" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <nav class="container nav" aria-label="Primary">
+        <a class="brand" href="#home" aria-label="Stan Yokwe Home">
+          <img class="logo" src="assets/logo.jpg" alt="Stan Yokwe logo" />
+          <span class="brand-text">Stan Yokwe</span>
+        </a>
+
+        <!-- Accessible mobile menu toggle -->
+        <button
+          class="nav-toggle"
+          aria-controls="nav-links"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu"
+        >
+          ☰
+        </button>
+
+        <ul id="nav-links" class="nav-links">
+          <li><a href="#home" class="active" aria-current="page">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="case-study.html">Case Study</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <!-- Hero -->
+      <section id="home" class="section hero">
+        <div class="container hero-grid">
+          <div class="hero-photo">
+            <img
+              src="assets/hero.jpg"
+              alt="Portrait of Stan Yokwe"
+              class="avatar"
+              width="140"
+              height="140"
+              decoding="async"
+              fetchpriority="high"
+            />
+          </div>
+          <div class="hero-copy">
+            <p class="eyebrow">
+              Hi, I'm <span class="accent">Stan Yokwe</span>
+            </p>
+            <h1>Creative Developer & Designer</h1>
+            <p class="lead">
+              I create beautiful, functional digital experiences that solve real
+              problems. Passionate about clean code, thoughtful design, and
+              innovative solutions.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View My Work</a>
+              <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+            </div>
+
+            <!-- If you don't have real social URLs yet, keep aria-hidden -->
+            <div class="hero-icons" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section about">
+        <div class="container about-grid">
+          <figure class="about-photo card">
+            <img src="assets/hero.jpg" alt="Stan sitting on stone columns" />
+          </figure>
+          <div class="about-copy">
+            <h2>About Me</h2>
+            <p class="muted">
+              Learn more about my background, skills, and what drives me as a
+              developer.
+            </p>
+            <h3>My Story</h3>
+            <p>
+              I'm a passionate full-stack developer with 3+ years of experience
+              creating digital solutions that make a difference. I love turning
+              complex problems into simple, beautiful designs that users love to
+              interact with. When I'm not coding, you can find me exploring new
+              technologies, contributing to open-source projects, or mentoring
+              aspiring developers. I believe in writing clean, maintainable code
+              and creating inclusive digital experiences.
+            </p>
+            <h3>Skills & Technologies</h3>
+            <ul class="chips" aria-label="Skills and technologies">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Next.js</li>
+              <li>Node.js</li>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>Tailwind CSS</li>
+              <li>Figma</li>
+              <li>Git</li>
+              <li>AWS</li>
+              <li>Docker</li>
+              <li>GraphQL</li>
+            </ul>
+            <div class="stats">
+              <div class="stat card">
+                <span class="stat-num">3+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat card">
+                <span class="stat-num">25+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat card">
+                <span class="stat-num">10+</span>
+                <span class="stat-label">Happy Clients</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <div class="container">
+          <header class="section-head">
+            <h2>Featured Projects</h2>
+            <p class="muted">
+              Here are some of my recent projects that showcase my skills and
+              experience in web development and design.
+            </p>
+          </header>
+
+          <div class="projects-grid">
+            <!-- Cards (unchanged content, images already lazy) -->
+            <!-- ... keep your existing project cards here ... -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section contact">
+        <div class="container contact-grid">
+          <div class="contact-info card">
+            <h2>Get in Touch</h2>
+            <p class="muted">
+              Have a project in mind or want to collaborate? I'd love to hear
+              from you. Let's create something amazing together.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <span class="icon">✉️</span>
+                <a href="mailto:yokwestan03@gmail.com">yokwestan03@gmail.com</a>
+              </li>
+              <li>
+                <span class="icon">📞</span>
+                <a href="tel:+12266068059">226 606 8059</a>
+              </li>
+              <li>
+                <span class="icon">📍</span><span>Kitchener, Ontario</span>
+              </li>
+            </ul>
+            <p class="muted small">Response time: usually within 24 hours.</p>
+          </div>
+
+          <form id="contact-form" class="card" aria-label="Send me a message">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" autocomplete="name" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>Portfolio</h4>
+          <p class="muted">
+            Creating beautiful, functional digital experiences that solve real
+            problems and make a positive impact.
+          </p>
+        </div>
+        <nav aria-label="Quick links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home" aria-current="page">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="case-study.html">Case Study</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li>Web Development</li>
+            <li>UI/UX Design</li>
+            <li>Mobile Development</li>
+            <li>Consulting</li>
+          </ul>
+        </div>
+      </div>
+      <p class="legal">
+        © <span id="year"></span> Stan Yokwe. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
